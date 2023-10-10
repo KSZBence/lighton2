@@ -13,10 +13,7 @@ class LampakModel{
         let felette = index-3
         let jobbra = index+1
         let alatta =index+3
-        console.log(felette);
-        console.log(alatta);
-        console.log(jobbra);
-        console.log(balra);
+        this.lampak[index] = this.ertekvalt(this.lampak[index])
         if (balra>=0) {
             this.lampak[balra] = this.ertekvalt(this.lampak[balra])
         }
