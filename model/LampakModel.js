@@ -8,11 +8,15 @@ class LampakModel{
     }
 
     szomszedokValtoztatasa(index){
+        console.log(index);
         let balra = index-1
         let felette = index-3
         let jobbra = index+1
         let alatta =index+3
-
+        console.log(felette);
+        console.log(alatta);
+        console.log(jobbra);
+        console.log(balra);
         if (balra>=0) {
             this.lampak[balra] = this.ertekvalt(this.lampak[balra])
         }

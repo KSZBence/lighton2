@@ -9,8 +9,9 @@ class Controller{
         
         const lampak = new Lampak(tarolo, lm.getList())
         
-        $(window).on("kapcs", (event) => {
+        $(window).on("kapcs", () => {
             lm.szomszedokValtoztatasa(event.detail)
+            
             lampak.init(lm.getList())
         });
     }

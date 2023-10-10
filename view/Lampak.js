@@ -13,7 +13,7 @@ class Lampak{
         this.szuloElem.html("")
         console.log(lampak);
         for (let index = 0; index < lampak.length; index++) {
-            let lampa = new lampaElem(this.szuloElem)
+            let lampa = new lampaElem(this.szuloElem, index)
             lampa.setSzin(lampak[index])
         }
     }
